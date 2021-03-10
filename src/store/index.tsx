@@ -1,9 +1,14 @@
 import { combineReducers } from 'redux';
-import github from './github';
+import github, { githubSaga } from './github';
+import { all } from 'redux-saga/effects';
 
 const rootReducer = combineReducers({
 	github
 });
+
+export function* rootSaga() {
+	yield all([githubSaga()]);
+}
 
 export default rootReducer;
 
