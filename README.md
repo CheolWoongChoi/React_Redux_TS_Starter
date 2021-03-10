@@ -18,6 +18,7 @@ npm test : 테스트 파일을 실행합니다.
 - Redux
 - Redux-Saga
 - Redux-Thunk
+- Redux-Logger
 - Sass
 - CSS-Module
 - React Testing Library (RTL)
